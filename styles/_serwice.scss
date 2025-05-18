@@ -1,0 +1,137 @@
+.service {
+  margin-bottom: 44px;
+}
+
+.service-bottom {
+  padding-top: 42px;
+
+  @media (max-width: 950px) {
+    padding-top: 12px;
+  }
+}
+
+.service-body {
+  position: relative;
+  width: 440px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 800px) {
+    margin: 0 15px;
+  }
+
+  &_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  &_title {
+    position: absolute;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 23px;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-white);
+
+    @media (max-width: 800px) {
+      padding: 0 10px;
+      font-size: 21px;
+    }
+  }
+
+  &_btn {
+    position: absolute;
+    font-weight: 400;
+    font-size: 20px;
+    bottom: 32px;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 11px 21px;
+    color: var(--color-black);
+    padding: 13px 44px;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  display: flex;
+  z-index: 2000;
+}
+
+.modal {
+  max-width: 1170px;
+  display: flex;
+  gap: 20px;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 20px;
+  color: black;
+
+  @media (max-width: 800px) {
+    flex-wrap: wrap;
+    margin: 0 15px;
+  }
+
+  &_img {
+    width: 100%;
+    max-width: 555px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+}
+
+.modal-text {
+  font-weight: 400;
+  font-size: 16px;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+  }
+}
+.modal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+
+  &_group {
+    display: flex;
+    padding: 18px 5px 18px 31px;
+    border-radius: 15px;
+    align-items: center;
+    gap: 13px;
+    font-weight: 400;
+    font-size: 20px;
+
+    @media (max-width: 800px) {
+      font-size: 16px;
+      padding: 11px;
+    }
+  }
+}
+.short {
+  max-width: 440px;
+}

@@ -1,0 +1,159 @@
+.contacts {
+  &_body {
+    padding-top: 32px;
+    margin-bottom: 50px;
+
+    @media (max-width: 800px) {
+      margin: 0 15px;
+    }
+  }
+
+  &_body-left {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding-top: 19px;
+  }
+
+  &_body-right {
+    width: 100%;
+    max-width: 670px;
+    height: 630px;
+    padding-top: 20px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+.left-top {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 670px;
+  gap: 26px;
+
+  @media (max-width: 450px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.contacts-row {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 11px;
+
+  &_col {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contacts-row a {
+  color: var(--color-dark);
+}
+
+.col-title {
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 24px;
+}
+@media (max-width: 800px) {
+  .col-title {
+    font-size: 18px;
+  }
+}
+
+.col-text {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .col-text {
+    font-size: 18px;
+  }
+}
+.left-bottom {
+  background-color: var(--color-bg-green);
+  border-radius: 15px;
+  max-width: 670px;
+  position: relative;
+  height: 100%;
+
+  &_decor {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  &_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_title {
+    z-index: 1000;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--color-white);
+    padding-top: 18px;
+    margin-bottom: 17px;
+  }
+
+  &_input {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 17px;
+    border: 1px solid transparent;
+    padding: 12px 0 17px 15px;
+
+    @media (max-width: 600px) {
+      padding: 12px 6px;
+    }
+  }
+
+  &_input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &_input:focus {
+    outline: none;
+  }
+
+  &_btn {
+    z-index: 1000;
+    color: var(--color-white);
+    padding: 19px 106px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 24px;
+
+    @media (max-width: 600px) {
+      padding: 12px 56px;
+    }
+  }
+}
+
+.input-wrapper {
+  max-width: 600px;
+  z-index: 1000;
+}
+@media (max-width: 800px) {
+  .input-wrapper {
+    max-width: 350px;
+    margin-right: 7px;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}

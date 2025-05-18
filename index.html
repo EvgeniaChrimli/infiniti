@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Обустройство площадок под ключ</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_top">
+        <a class="header_top-tel" href="tel:+79063608774">+79063608774</a>
+        <div class="header_top-info">
+          Митрофаньевское шоссе 2к2, оф. 214 info@infinitipro.ru
+        </div>
+      </div>
+      <div class="container">
+        <div class="header_body">
+          <img
+            src="assets/images/logoinfinit.svg"
+            class="header_body-logo"
+            alt="logo"
+          />
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="/pages/service.html" class="nav_link text">Услуги</a>
+              </li>
+              <li class="nav_item">
+                <a href="/pages/works.html" class="nav_link text">Портфолио</a>
+              </li>
+              <li class="nav_item">
+                <a href="/pages/aboutUs.html" class="nav_link text"
+                  >О компании</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="/pages/blog.html" class="nav_link text">Блог</a>
+              </li>
+              <li class="nav_item">
+                <a href="/pages/contacts.html" class="nav_link text"
+                  >Контакты</a
+                >
+              </li>
+              <li class="nav_item">
+                <a class="nav_link openModal text">Заказать звонок</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu">
+            <a class="mobile-menu_link openModal text">оставить заявку</a>
+            <ul class="mobile-menu_list">
+              <li class="mobile-menu_item">
+                <a href="/pages/blog.html" class="mobile-menu_links">Блог</a>
+              </li>
+              <li class="mobile-menu_item">
+                <a href="/pages/contacts.html" class="mobile-menu_links"
+                  >Контакты</a
+                >
+              </li>
+              <li class="mobile-menu_item">
+                <a href="/pages/service.html" class="mobile-menu_links"
+                  >Услуги</a
+                >
+              </li>
+              <li class="mobile-menu_item">
+                <a href="/pages/works.html" class="mobile-menu_links"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu_item">
+                <a href="/pages/aboutUs.html" class="mobile-menu_links"
+                  >О компании</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </header>
+    <section class="slider">
+      <div id="firstSwiper" class="swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="container">
+          <div class="navigation">
+            <div class="prev">
+              <img src="assets/images/pre.svg" alt="prevSlide" />
+            </div>
+            <div class="next">
+              <img src="assets/images/nex.svg" alt="nextSlide" />
+            </div>
+          </div>
+          <div class="pagination"></div>
+        </div>
+      </div>
+
+      <div class="slider-mobile">
+        <div id="secondSlider" class="swiper mySwiper">
+          <div class="slider-mobile_swiper-wrapper swiper-wrapper">
+            <div class="slider-mobile_swiper-slide swiper-slide">
+              <img
+                src="/assets/images/slider/slideMobile1.png"
+                class="slider-mobile_img"
+                alt="slider"
+              />
+              <div class="slider-mobile_info">
+                <div class="slider-mobile_title">
+                  Собственное производство резиновой крошки высочайшего качества
+                </div>
+                <div class="slider-mobile_text">
+                  Сертифицированные материалы, свои бригады, сотни реализованных
+                  объектов
+                </div>
+              </div>
+            </div>
+            <div class="slider-mobile_swiper-slide swiper-slide">
+              <img
+                src="/assets/images/slider/slideMobile2.png"
+                class="slider-mobile_img"
+                alt="slider"
+              />
+              <div class="slider-mobile_info">
+                <div class="slider-mobile_title">
+                  Собственное производство резиновой крошки высочайшего качества
+                </div>
+                <div class="slider-mobile_text">
+                  Сертифицированные материалы, свои бригады, сотни реализованных
+                  объектов
+                </div>
+              </div>
+            </div>
+            <div class="slider-mobile_swiper-slide swiper-slide">
+              <img
+                src="/assets/images/slider/slideMobile3.png"
+                class="slider-mobile_img"
+                alt="slider"
+              />
+              <div class="slider-mobile_info">
+                <div class="slider-mobile_title">
+                  Собственное производство резиновой крошки высочайшего качества
+                </div>
+                <div class="slider-mobile_text">
+                  Сертифицированные материалы, свои бригады, сотни реализованных
+                  объектов
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-mobile_pagination"></div>
+        </div>
+      </div>
+    </section>
+    <div class="application">
+      <div class="application_modal">
+        <img
+          src="/assets/images/decorate.svg"
+          alt="decor"
+          class="application_decor"
+        />
+        <div class="application_body">
+          <div class="application_title">
+            <img src="/assets/images/modal.svg" alt="money" />
+            <p>Рассчитаем стоимость вашего проекта</p>
+          </div>
+          <div class="application_subtitle">
+            отправьте форму для связи, ответим в течение 5 минут
+          </div>
+          <div class="application_mobile-title">Рассчитаем стоимость</div>
+          <div class="application_input-wrapper">
+            <input
+              type="text"
+              class="application_input"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="number"
+              class="application_input"
+              placeholder="Телефон"
+            />
+            <input
+              type="email"
+              class="application_input none"
+              placeholder="E-mail"
+            />
+            <input
+              type="text"
+              class="application_input"
+              placeholder="Комментарий"
+            />
+          </div>
+          <button class="application_btn succes btn btn-green">
+            отправить
+          </button>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="container">
+        <h1 class="main_title title">Преимущества</h1>
+        <div class="main_subtitle text">Почему выбирают Infiniti Pro</div>
+        <div class="main_body flex-row">
+          <div class="body-item blue blue-hover">
+            <img
+              src="assets/images/main1.svg"
+              alt="experience"
+              class="body-item_img"
+            />
+            <div class="body-item_text">12 лет опыта</div>
+          </div>
+          <div class="body-item green green-hover">
+            <img
+              src="assets/images/main2.svg"
+              alt="producrion"
+              class="body-item_img"
+            />
+            <div class="body-item_text">
+              Собственное <br />
+              производство
+            </div>
+          </div>
+          <div class="body-item rose rose-hover">
+            <img
+              src="assets/images/main3.svg"
+              alt="garanty"
+              class="body-item_img"
+            />
+            <div class="body-item_text">Гарантия до 5 лет</div>
+          </div>
+          <div class="body-item orange orange-hover">
+            <img
+              src="assets/images/main4.svg"
+              alt="payment"
+              class="body-item_img"
+            />
+            <div class="body-item_text">Бесплатный расчёт</div>
+          </div>
+        </div>
+        <div class="services">
+          <h3 class="services_title title">Услуги</h3>
+          <div class="services_subtitle text">
+            Мы работаем с частными, муниципальными и коммерческими объектами.
+          </div>
+          <div class="services_body flex-row">
+            <div class="services_item">
+              <div class="services_item-top">
+                <img
+                  src="assets/images/servicess/kidsplay.png"
+                  alt=""
+                  class="services_img"
+                />
+                <p class="services_item-text">Детские площадки</p>
+              </div>
+              <button
+                data-default="оставить заявку"
+                class="services_item-bottom openModal succes btn"
+              >
+                оставить заявку
+              </button>
+            </div>
+            <div class="services_item">
+              <div class="services_item-top">
+                <img
+                  src="assets/images/servicess/sportPokrytie.png"
+                  alt=""
+                  class="services_img"
+                />
+                <p class="services_item-text">Спортивные покрытия</p>
+              </div>
+              <button
+                data-default="оставить заявку"
+                class="services_item-bottom openModal succes btn"
+              >
+                оставить заявку
+              </button>
+            </div>
+            <div class="services_item">
+              <div class="services_item-top">
+                <img
+                  src="assets/images/servicess/kroshka.png"
+                  alt=""
+                  class="services_img"
+                />
+                <p class="services_item-text">Резинова крошка</p>
+              </div>
+              <button
+                data-default="оставить заявку"
+                class="services_item-bottom openModal succes btn"
+              >
+                оставить заявку
+              </button>
+            </div>
+          </div>
+          <a href="/pages/service.html" class="services_btn dark-btn"
+            >все услуги</a
+          >
+        </div>
+        <div class="works">
+          <h4 class="works_title title">Наши работы</h4>
+          <div class="works_body flex-row">
+            <img
+              src="assets/images/work1.png"
+              alt="works"
+              class="works_body-img"
+            />
+            <img
+              src="assets/images/work2.png"
+              alt="works"
+              class="works_body-img"
+            />
+            <img
+              src="assets/images/work3.png"
+              alt="works"
+              class="works_body-img"
+            />
+            <img
+              src="assets/images/work4.png"
+              alt="works"
+              class="works_body-img"
+            />
+          </div>
+          <div class="works-mobile">
+            <div id="fourthSlider" class="works-mobile_swiper swiper mySwiper">
+              <div class="swiper-wrapper works-mobile_swiper-wrapper">
+                <div class="swiper-slide works-mobile_swiper-slide">
+                  <img
+                    src="/assets/images/work1.png"
+                    alt="works"
+                    class="works-mobile_img"
+                  />
+                </div>
+                <div class="swiper-slide works-mobile_swiper-slide">
+                  <img
+                    src="/assets/images/work2.png"
+                    alt="works"
+                    class="works-mobile_img"
+                  />
+                </div>
+                <div class="swiper-slide works-mobile_swiper-slide">
+                  <img
+                    src="/assets/images/work3.png"
+                    alt="works"
+                    class="works-mobile_img"
+                  />
+                </div>
+                <div class="swiper-slide works-mobile_swiper-slide">
+                  <img
+                    src="/assets/images/work4.png"
+                    alt="works"
+                    class="works-mobile_img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="/pages/works.html" class="works_btn dark-btn">еще</a>
+        </div>
+      </div>
+    </main>
+    <section class="reviews">
+      <div class="reviews_title title">Отзывы</div>
+      <div class="reviews_desktop">
+        <div class="container">
+          <div class="reviews_slider">
+            <svg class="reviews_prev">
+              <use href="assets/sprite.svg#prev"></use>
+            </svg>
+            <div class="reviews_slides">
+              <img src="assets/images/review4.png" class="reviews_slide" />
+              <img src="assets/images/review1.png" class="reviews_slide" />
+              <img src="assets/images/review2.png" class="reviews_slide" />
+              <img src="assets/images/review3.png" class="reviews_slide" />
+              <img src="assets/images/review5.png" class="reviews_slide" />
+            </div>
+            <svg class="reviews_next">
+              <use href="assets/sprite.svg#prev"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-mobile">
+        <div id="thirdSwiper" class="swiper mySwiper reviews-mobile_swiper">
+          <div class="swiper-wrapper reviews-mobile_swiper-wrapper">
+            <div class="swiper-slide reviews-mobile_swiper-slide">
+              <img
+                src="/assets/images/review1.png"
+                alt=""
+                class="reviews-mobile_img"
+              />
+            </div>
+            <div class="swiper-slide reviews-mobile_swiper-slide">
+              <img
+                src="/assets/images/review4.png"
+                alt=""
+                class="reviews-mobile_img"
+              />
+            </div>
+            <div class="swiper-slide reviews-mobile_swiper-slide">
+              <img
+                src="/assets/images/review2.png"
+                alt=""
+                class="reviews-mobile_img"
+              />
+            </div>
+            <div class="swiper-slide reviews-mobile_swiper-slide">
+              <img
+                src="/assets/images/review3.png"
+                alt=""
+                class="reviews-mobile_img"
+              />
+            </div>
+            <div class="swiper-slide reviews-mobile_swiper-slide">
+              <img
+                src="/assets/images/review5.png"
+                alt=""
+                class="reviews-mobile_img"
+              />
+            </div>
+          </div>
+          <div class="reviews-mobile_pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="how_title title">Как мы работаем?</div>
+      <div class="container">
+        <div class="how_content flex-row">
+          <div class="how-body blue">
+            <img src="assets/images/how1.svg" alt="" class="how-body_img" />
+            <div class="how-body_text">Заявка</div>
+          </div>
+          <div class="how-body dark-green">
+            <img src="assets/images/how2.svg" alt="" class="how-body_img" />
+            <div class="how-body_text">Расчет стоимости</div>
+          </div>
+          <div class="how-body orange">
+            <img src="assets/images/how3.svg" alt="" class="how-body_img" />
+            <div class="how-body_text">Заключение договора</div>
+          </div>
+          <div class="how-body orange">
+            <img src="assets/images/how4.svg" alt="" class="how-body_img" />
+            <div class="how-body_text">Подготовка основания</div>
+          </div>
+          <div class="how-body blue">
+            <img src="assets/images/how5.svg" alt="" class="how-body_img" />
+            <div class="how-body_text">Укладка покрытия</div>
+          </div>
+          <div class="how-body dark-green">
+            <img src="assets/images/how6.svg" alt="" class="how-body_img" />
+            <div class="how-body_text">Гарантия и сопровождение</div>
+          </div>
+        </div>
+        <div class="how-mobile">
+          <div class="how-mobile_info">
+            <div class="how-mobile_body border-blue">Заявка</div>
+            <div class="how-mobile_body border-green">Расчет стоимости</div>
+            <div class="how-mobile_body border-orange">Заключение договора</div>
+            <div class="how-mobile_body border-blue">Подготовка основания</div>
+            <div class="how-mobile_body border-green">Укладка покрытия</div>
+            <div class="how-mobile_body border-orange">
+              Гарантия и сопровождение
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="request">
+      <div class="container">
+        <div class="request_body">
+          <div class="request_title title">Оставить заявку</div>
+          <div class="request_subtitle text">
+            Рассчитаем стоимость и срок за 15 минут
+          </div>
+          <div class="input-body">
+            <input
+              type="text"
+              class="request_input"
+              placeholder="Ваше имя"
+            /><input
+              type="number"
+              class="request_input"
+              placeholder="Телефон"
+            /><input
+              type="email"
+              class="request_input none"
+              placeholder="E-mail"
+            /><input type="text" class="request_input" placeholder="Услуга" />
+          </div>
+          <button class="request_btn dark-btn">отправить</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_top">
+          <nav class="footer-nav">
+            <ul class="footer-nav_list">
+              <li class="footer-nav_item">
+                <a href="/pages/service.html" class="footer-nav_link">Услуги</a>
+              </li>
+              <li class="footer-nav_item">
+                <a href="/pages/works.html" class="footer-nav_link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="footer-nav_item">
+                <a href="/pages/aboutUs.html" class="footer-nav_link"
+                  >О компании</a
+                >
+              </li>
+              <li class="footer-nav_item">
+                <a href="/pages/blog.html" class="footer-nav_link">Блог</a>
+              </li>
+              <li class="footer-nav_item">
+                <a href="/pages/contacts.html" class="footer-nav_link"
+                  >Контакты</a
+                >
+              </li>
+              <li class="footer-nav_item">
+                <a class="footer-nav_link openModal">Заказать звонок</a>
+              </li>
+            </ul>
+          </nav>
+          <img
+            src="/assets/images/logoinfinit.svg"
+            alt="logo"
+            class="footer_top-logo"
+          />
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <div class="footer-mobile_top">
+          <img src="/assets/images/logoinfinit.svg" alt="logo" class="logo" />
+        </div>
+        <div class="footer-mobile_bottom">
+          <ul class="mobile-left">
+            <li class="mobile-list">
+              <a href="tel:+79063608774" class="mobile-contact">+79063608774</a>
+            </li>
+            <li class="mobile-list">
+              <a href="/pages/service.html" class="mobile-link">Услуги</a>
+            </li>
+            <li class="mobile-list">
+              <a href="/pages/works.html" class="mobile-link">Портфолио</a>
+            </li>
+            <li class="mobile-list">
+              <a href="/pages/aboutUs.html" class="mobile-link">О компании</a>
+            </li>
+          </ul>
+          <ul class="mobile-right">
+            <li class="mobile-contact">info@infinitipro.ru</li>
+            <li class="mobile-list">
+              <a href="/pages/blog.html" class="mobile-link">Блог</a>
+            </li>
+            <li class="mobile-list">
+              <a href="/pages/contacts.html" class="mobile-link">Контакты</a>
+            </li>
+            <li class="mobile-list openModal">Заказать звонок</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="footer_bottom-text">
+          Митрофаньевское шоссе 2к2, оф. 214 info@infinitipro.ru
+        </div>
+        <a href="tel:+79063608774" class="footer_bottom-tel">+79063608774</a>
+      </div>
+    </footer>
+    <script src="app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

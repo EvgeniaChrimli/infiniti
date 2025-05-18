@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+li,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+:root {
+  --color-light-green: #a0cdbf;
+  --color-bg-green: #35453b;
+  --color-green: #4f7d6f;
+  --color-dark-green: #4f7d6f;
+  --color-blue: #abc6d9;
+  --color-dark: #444444;
+  --color-black: #000000;
+  --color-rose: #c1a4ba;
+  --color-white: #ffff;
+  --color-orange: #ffaf85;
+
+  --color-hover-green: #7ea196;
+  --color-hover-blue: #8fa7b8;
+  --color-hover-rose: #aa8fa4;
+  --color-hover-orange: #d58c66;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1360px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 1s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn-green {
+  background-color: var(--color-light-green);
+}
+
+.btn-green:hover {
+  background-color: #7ba195;
+}
+.btn-green:active {
+  background-color: var(--color-white);
+}
+
+.dark-btn {
+  border-radius: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 20px;
+  transition: all 1s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.dark-btn:hover {
+  background-color: var(--color-black);
+}
+
+.title {
+  font-weight: 600;
+  font-size: clamp(26px, 2.6vw, 36px);
+  color: var(--color-black);
+  text-align: center;
+}
+
+.text {
+  color: var(--color-dark);
+  font-weight: 400;
+  font-size: clamp(12px, 1.3vw, 18px);
+  transition: all 1s;
+  text-align: center;
+}
+
+.navigate {
+  border-top: 1px solid #000000;
+  padding: 48px 0;
+
+  @media (max-width: 800px) {
+    padding: 28px 0;
+  }
+
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 33px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-dark);
+
+    @media (max-width: 800px) {
+      margin-left: 5%;
+      font-size: 16px;
+      gap: 15px;
+    }
+  }
+  &_body a {
+    color: var(--color-dark);
+    white-space: nowrap;
+  }
+}
+
+.section {
+  &_top-title {
+    color: var(--color-white);
+    background-color: var(--color-bg-green);
+    padding: 17px 0;
+    font-weight: 600;
+    font-size: 32px;
+
+    @media (max-width: 800px) {
+      font-size: 22px;
+    }
+  }
+
+  &_top-img {
+    @media (max-width: 800px) {
+      width: 100%;
+      max-width: 53px;
+    }
+  }
+
+  &_top-subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    background-color: var(--color-light-green);
+    padding: 2px 0;
+
+    @media (max-width: 800px) {
+      padding: 5px 0 5px 15px;
+      font-size: 16px;
+    }
+  }
+}
+
+.blue {
+  background-color: var(--color-blue);
+}
+.green {
+  background-color: var(--color-light-green);
+}
+.rose {
+  background-color: var(--color-rose);
+}
+.orange {
+  background-color: var(--color-orange);
+}
+.dark-green {
+  background-color: var(--color-dark-green);
+}
+
+.blue-hover:hover {
+  background-color: var(--color-hover-blue);
+}
+
+.green-hover:hover {
+  background-color: var(--color-hover-green);
+}
+
+.rose-hover:hover {
+  background-color: var(--color-hover-rose);
+}
+.orange-hover:hover {
+  background-color: var(--color-hover-orange);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.application {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  &_modal {
+    background-color: var(--color-bg-green);
+    border-radius: 15px;
+    max-width: 670px;
+    position: relative;
+    width: 800px;
+
+    @media (max-width: 800px) {
+      max-width: 325px;
+      padding: 0 6px;
+      background-color: #a0cdbf;
+    }
+  }
+
+  &_decor {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  &_title {
+    z-index: 1000;
+    font-weight: 600;
+    font-size: 27px;
+    color: var(--color-white);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &_subtitle {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 11px;
+    z-index: 1000;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &_mobile-title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c2c2c;
+    @media (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  &_input-wrapper {
+    padding-top: 10px;
+    width: 100%;
+    max-width: 580px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    padding: 0 80px;
+    margin-bottom: 31px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 24px;
+      max-width: 300px;
+    }
+  }
+
+  &_input {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 10px 0 10px 18px;
+    @media (max-width: 800px) {
+      padding: 9px;
+      text-align: center;
+    }
+  }
+
+  &_input::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #35453b;
+    font-family: "Montserrat", sans-serif;
+
+    @media (max-width: 800px) {
+      font-size: 18px;
+    }
+  }
+
+  &_btn {
+    padding: 19px 106px;
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 20px;
+    z-index: 1000;
+    @media (max-width: 800px) {
+      background-color: #444444;
+      padding: 12px 33px;
+    }
+  }
+}
+
+.application.active {
+  display: flex;
+  z-index: 2000;
+}
+
+.succes-active {
+  background-color: white;
+  color: black;
+}
