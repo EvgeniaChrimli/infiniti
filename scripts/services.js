@@ -112,7 +112,7 @@ export const initService = (services) => {
              <img src="${element.main.img1}" alt="services" class="service-body_img" />
             <div  class="service-body_title">${element.name}</div>
             <a
-             href="servicePage.html?id=${element.id}"
+             href="pages/servicePage.html?id=${element.id}"
               class="service-body_btn btn btn-green"
               >подробнее</a
             >
