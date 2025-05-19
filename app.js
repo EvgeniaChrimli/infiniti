@@ -18,21 +18,8 @@ const slides = [
 ];
 
 const swiperWrapper = document.querySelector(".swiper-wrapper");
-
-if (
-  window.location.pathname === "/" ||
-  window.location.pathname.endsWith("index.html")
-) {
-  const swiper = new Swiper("#firstSwiper", {
-    pagination: {
-      el: ".pagination",
-    },
-    navigation: {
-      nextEl: ".next",
-      prevEl: ".prev",
-    },
-  });
-
+console.log(window.location.pathname);
+if (window.location.pathname.includes("index.html")) {
   slides.map((item) => {
     const html = `
     <div class="swiper-slide">
@@ -54,7 +41,15 @@ if (
     swiperWrapper.insertAdjacentHTML("afterbegin", html);
   });
 
-  swiper.update();
+  const swiper = new Swiper("#firstSwiper", {
+    pagination: {
+      el: ".pagination",
+    },
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+  });
 
   const swiperSecond = new Swiper("#secondSlider", {
     pagination: {
