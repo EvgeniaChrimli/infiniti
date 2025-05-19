@@ -54,6 +54,8 @@ if (
     swiperWrapper.insertAdjacentHTML("afterbegin", html);
   });
 
+  swiper.update();
+
   const swiperSecond = new Swiper("#secondSlider", {
     pagination: {
       el: ".slider-mobile_pagination",
