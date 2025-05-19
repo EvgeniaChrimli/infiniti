@@ -19,7 +19,7 @@ const slides = [
 
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 console.log(window.location.pathname);
-if (window.location.pathname.includes("index.html")) {
+if (document.body.dataset.page === "index") {
   slides.map((item) => {
     const html = `
     <div class="swiper-slide">
