@@ -105,7 +105,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-if (window.location.pathname.includes("contacts.html")) {
+if (document.body.dataset.page === "contacts") {
   document.addEventListener("DOMContentLoaded", () => {
     const map = L.map("map").setView([59.896153, 30.30874], 16);
 
@@ -120,7 +120,7 @@ if (window.location.pathname.includes("contacts.html")) {
   });
 }
 
-if (window.location.pathname.includes("service.html")) {
+if (document.body.dataset.page === "service") {
   initService(services);
 }
 
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-if (window.location.pathname.includes("works.html")) {
+if (document.body.dataset.page === "works") {
   initWorks(works);
 }
 

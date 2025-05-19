@@ -2,7 +2,7 @@ export const works = [
   {
     id: 1,
     name: "ЖК Олимп",
-    img: "/assets/images/ourWork/ourWork1.jpg",
+    img: "assets/images/ourWork/ourWork1.jpg",
     about1:
       "Для нового жилого комплекса «Солнечный квартал» наша команда реализовала яркую, функциональную и полностью безопасную детскую площадку. Основной задачей было создать пространство, где детям интересно, а родителям спокойно.",
     about2:
@@ -15,27 +15,27 @@ export const works = [
   {
     id: 2,
     name: "Сквер “Молодежный”",
-    img: "/assets/images/ourWork/ourWork2.jpg",
+    img: "assets/images/ourWork/ourWork2.jpg",
   },
   {
     id: 3,
     name: "Спорткомплекс “Аврора”",
-    img: "/assets/images/ourWork/ourWork3.jpg",
+    img: "assets/images/ourWork/ourWork3.jpg",
   },
   {
     id: 4,
     name: "ЖК Березовая Роща",
-    img: "/assets/images/ourWork/ourWork4.jpg",
+    img: "assets/images/ourWork/ourWork4.jpg",
   },
   {
     id: 5,
     name: "Лицей №5",
-    img: "/assets/images/ourWork/ourWork5.png",
+    img: "assets/images/ourWork/ourWork5.png",
   },
   {
     id: 6,
     name: "ЖК Гармония",
-    img: "/assets/images/ourWork/ourWork6.jpg",
+    img: "assets/images/ourWork/ourWork6.jpg",
   },
 ];
 
