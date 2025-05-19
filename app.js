@@ -5,15 +5,15 @@ import { initWorks, works } from "./scripts/works.js";
 const slides = [
   {
     id: 1,
-    src: "/assets/images/slider/slid3.png",
+    src: "./assets/images/slider/slid3.png",
   },
   {
     id: 2,
-    src: "/assets/images/slider/slid2.png",
+    src: "./assets/images/slider/slid2.png",
   },
   {
     id: 3,
-    src: "/assets/images/slider/slid1.png",
+    src: "./assets/images/slider/slid1.png",
   },
 ];
 
@@ -75,14 +75,12 @@ if (
 
   function showSlide(index) {
     const slideWidth = allslides[0].clientWidth;
-    console.log(slideWidth);
     const slidesContainer = document.querySelector(".reviews_slides");
     slidesContainer.style.transform = `translateX(-${index * slideWidth}px)`;
   }
 
   nextBtn.addEventListener("click", () => {
     currentIndex = (currentIndex + 1.3) % allslides.length;
-    console.log(currentIndex);
     showSlide(currentIndex);
     nextBtn.classList.toggle("active-nav");
   });
