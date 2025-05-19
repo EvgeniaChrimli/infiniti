@@ -3,13 +3,13 @@ export const services = [
     id: 1,
     name: "Детские площадки",
     header: {
-      img: "./assets/images/kids/kidsTop.svg",
+      img: "../assets/images/kids/kidsTop.svg",
       info: "Проектирование и укладка резинового покрытия для детских площадок под ключ. Безопасно, ярко и долговечно",
     },
     main: {
-      img1: "./assets/images/kids/kidsCent.png",
-      img2: "./assets/images/kids/kids1.png",
-      img3: "./assets/images/kids/kids2.png",
+      img1: "../assets/images/kids/kidsCent.png",
+      img2: "../assets/images/kids/kids1.png",
+      img3: "../assets/images/kids/kids2.png",
       text1:
         "Мы проектируем и обустраиваем детские площадки с безопасным покрытием из резиновой крошки или EPDM. Покрытие устойчиво к влаге, ультрафиолету и механическим повреждениям, соответствует ГОСТам и имеет антискользящую поверхность.",
       text2:
