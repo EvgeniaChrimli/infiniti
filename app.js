@@ -5,15 +5,15 @@ import { initWorks, works } from "./scripts/works.js";
 const slides = [
   {
     id: 1,
-    src: "/assets/images/slider/slid3.png",
+    src: "assets/images/slider/slid3.png",
   },
   {
     id: 2,
-    src: "/assets/images/slider/slid2.png",
+    src: "assets/images/slider/slid2.png",
   },
   {
     id: 3,
-    src: "/assets/images/slider/slid1.png",
+    src: "assets/images/slider/slid1.png",
   },
 ];
 
